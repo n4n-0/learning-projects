@@ -7,3 +7,4 @@ The point in these projects are to build my skills while I attend school and con
 | ----------- | ----------- |
 | [Mock ToS Page](https://github.com/n4n-0/learning-projects/tree/main/mock-tos) | This is a mock ToS page that I made utilizing some basic html and css skills I learned. |
 | [Google Search Page](https://github.com/n4n-0/learning-projects/tree/main/google-search-page) | Incomplete |
+| [Birthday Card](https://github.com/n4n-0/learning-projects/tree/main/birthday-card) | A html/ css Birthday |
