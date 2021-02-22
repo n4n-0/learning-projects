@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/main.css">
+  <link rel="stylesheet" href="https://use.typekit.net/wzu4mbv.css">
+  <title>RPS Classic</title>
+</head>
+<body>
+  <section class="main-section">
+    <h1>Rock, Paper, Scissors Classic</h1>
+    <div class="game-ins">
+      <p>The rules are well known! Test your luck agaisnt one of the hardest RPS opponents ever programmed.</p>
+      <p>Make your choice!</p>
+    </div>
+    <div class="game-choices">
+      <a href="#"><img onclick="startGame('Rock')" src="/images/srock.png" alt="Rock"></a>
+      <a href="#"><img onclick="startGame('Paper')" src="/images/spaper.png" alt="Paper"></a>
+      <a href="#"><img onclick="startGame('Scissors')" src="/images/scissors.png" alt="scissors"></a>
+    </div>
+    <div class="game-score">
+      <p>Created by N4N-0</p>
+    </div>
+  </section>
+  <div id="myModal" class="message-modal">
+    <div class="modal">
+      <div class="modal-content">
+        <span onclick="closeModal()" class="close">&times;</span>
+        <h1 id="endResult">Winner</h1>
+        <p id="endMessage">Some text in the Modal..</p>
+        <button onclick="closeModal()" class="btn">Play Again</button>
+      </div>
+    </div>
+  </div>
+  <script src="/JS/main.js"></script>
+</body>
+</html>

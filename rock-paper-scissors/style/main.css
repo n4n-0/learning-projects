@@ -1,0 +1,147 @@
+html,
+body {
+  background-color: #131010;
+  color: #e0e0e0;
+  font-family: rift-soft, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main-section {
+  margin: auto;
+  margin-top: 60px;
+  width: 60%;
+  padding: 10px;
+}
+
+.main-section h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.game-ins {
+  text-align: center;
+  margin-top: -35px;
+  font-family: rift-soft, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.game-choices {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+@keyframes choice-pulse {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+
+.game-choices img {
+  margin: 5px 40px;
+  transform: perspective(1px) translate(0);
+}
+
+.game-choices img:hover {
+  animation-name: choice-pulse;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.game-score {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.game-score p {
+  align-self: flex-end;
+}
+
+.message-modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visbility 0s, opacity 0.5s;
+}
+
+.modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  position: relative;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  width: 40%;
+  height: 32%;
+}
+
+.modal-content {
+  display: block;
+  color: #131010;
+  text-align: center;
+  padding: 10px;
+}
+
+.modal-content h1 {
+  font-size: 42px;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  background-color: #da3737;
+  color: #e0e0e0;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.close {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 620px) {
+  .game-choices {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .game-choices img {
+    margin: 5px -35px;
+    transform: scale(0.6);
+  }
+}
