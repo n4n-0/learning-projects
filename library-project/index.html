@@ -19,34 +19,27 @@
       
     </div>
     <div class="book-list">
-      <div class="book-card">
-        <h1>Book Title</h1>
-        <p>Book Author</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, blanditiis nam laborum voluptatibus sunt culpa iste corrupti sapiente ex. Atque vero reprehenderit veniam harum esse reiciendis quod necessitatibus modi deserunt?</p>
-        <p>Pages</p>
-      </div>
-      <div class="book-card">
-        <h1>Book Title</h1>
-        <p>Book Author</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, blanditiis nam laborum voluptatibus sunt culpa iste corrupti sapiente ex. Atque vero reprehenderit veniam harum esse reiciendis quod necessitatibus modi deserunt?</p>
-        <p>Pages</p>
-      </div>
-      <div class="book-card">
-        <h1>Book Title</h1>
-        <p>Book Author</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, blanditiis nam laborum voluptatibus sunt culpa iste corrupti sapiente ex. Atque vero reprehenderit veniam harum esse reiciendis quod necessitatibus modi deserunt?</p>
-        <p>Pages</p>
-      </div>
-      <div class="book-card">
-        <h1>Book Title</h1>
-        <p>Book Author</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, blanditiis nam laborum voluptatibus sunt culpa iste corrupti sapiente ex. Atque vero reprehenderit veniam harum esse reiciendis quod necessitatibus modi deserunt?</p>
-        <p>Pages</p>
-      </div>
-
     </div>
-    <div class="fixed-button">
+    <div onclick="toggleModal()" class="fixed-button">
         <p>+</p>
+    </div>
+    <div id="modal" class="modal-background">
+      <div class="modal">
+        <div class="modal-content">
+          <h2>Add a Book</h2>
+            <form id="myForm">
+              <label for="bname">Book Title:</label><br>
+              <input type="text" id="bname" name="bname"><br>
+              <label for="bauthor">Book Author:</label><br>
+              <input type="text" id="bauthor" name="bauthor"><br>
+              <label for="bdesc">Book Description:</label><br>
+              <textarea id="bdesc" name="bdesc" rows="5" cols="100"></textarea><br>
+              <label for="bpages">Page Count:</label><br>
+              <input type="text" id="bpages" name="bpages"><br>
+              <input type="submit" id="submit" name="submit">
+            </form>
+        </div>
+      </div>
     </div>
   </div>
   <script src="/script/main.js"></script>
