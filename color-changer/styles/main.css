@@ -1,0 +1,46 @@
+:root {
+  --default-bg-color: #e8e8e8;
+  --default-text-color: #080808;
+}
+
+* {
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+body {
+  background-color: var(--default-bg-color);
+  max-width: 100%;
+  height: 100%;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hex {
+  margin: 10px;
+  color: var(--default-text-color);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5px 20px;
+}
+
+button {
+  border: none;
+  border-radius: 0.3rem;
+  width: 200px;
+  height: 50px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #080808;
+  color: #e8e8e8;
+  cursor: pointer;
+}
